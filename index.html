@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-page</title>
+    <link rel="stylesheet" type="text/css" href="signUp.css">
+
+    <!-- boxicon.com -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="form_section">
+            <!-- <ul>
+                <li>
+                    <h3>Vidmeo<span>Studio</span></h3>
+                </li>
+                <li>
+                    <h2>Welcome Back!</h2>
+                </li>
+                <li>
+                    <p>Please login to your account</p>
+                </li>
+                <li>
+                    <div class="form_main">
+                        <form action="#">
+                            <label for="email" class="texts email">Email</label><br>
+                            <input type="text" name="email" id="email" placeholder="user@example.com"><br><br>
+        
+                            <label for="password" class="texts">create a password</label><br>
+                            <input type="text" name="password" id="password" placeholder="6+ strong character"><br><br>
+        
+                            <div class="but_forget">
+                                <button>
+                                    <a href="#">Done!</a>
+                                </button>
+            
+                                <p>Forgot Password? <a href="#">Click here!</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="loop_vid">
+                    <video src="/motion_video/createAcc.mp4"></video>
+                </div>
+                </li>
+            </ul> -->
+
+            <div class="vidmeo">
+                <h3>Vidmeo<span><i>Studio</i></span></h3>
+            </div>
+
+            <div class="create">
+                <h2>Welcome Back!</h2>
+                <p>Please login to your account</p>
+            </div>
+
+            <div class="form_main">
+                <form name="form" id="form">
+                    <div class="form-control">
+                        <label>Username</label>
+                        <div class="input_div">
+                            <input type="text" name="username" id="username" placeholder="Robert green">
+                            <i class='bx bxs-user-pin main_icon main_icon'></i>
+                            <i class='bx bx-error-circle error_circle'></i>
+                            <i class='bx bxs-check-circle success_circle'></i>
+                            <small>Error message</small>
+                        </div>
+                    </div>
+
+                    <div class="form-control">
+                        <label>Create Password</label>
+                        <div class="input_div">
+                            <input type="password" name="password" id="password" placeholder="6+ strong character">
+                            <i class='bx bxs-lock-open main_icon main_icon'></i>
+                            <i class='bx bx-error-circle error_circle'></i>
+                            <i class='bx bxs-check-circle success_circle'></i>
+                            <small>Error message</small>
+                        </div>
+                    </div>
+                    <div class="btn_section">
+                        <button type="submit" 
+                        style="
+                            display: flex;
+                            place-items: center;
+                            justify-content: center;
+                            border: none;
+                            border-radius: 0.2rem;
+                            background-color: #5858f5;
+                            height: 2rem;
+                            width: 27%;
+                            color: #fff;
+                            font-size: 1.2rem;
+                            cursor: pointer;
+                            padding: 1.5rem 0rem;
+                        ">
+                            Done!
+                        </button>
+                        <div class="acc">
+                            <p>Have an account? <a href="#">Click here!</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="video_section">
+            <video src="/motion_video/createAcc.mp4" class="vid"  autoplay></video>
+        </div>
+    </div>
+
+    <script lang="javascript" src="signUp.js"></script>
+</body>
+</html>

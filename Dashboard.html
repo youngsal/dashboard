@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard_page</title>
+    <link rel="stylesheet" type="text/css" href="nav.css">
+
+    <!-- boxicons.com -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- <div class="wrapper"> -->
+        <div class="sideBar">
+            <div class="vidmeo_div">
+                <h2>Vidmeo<span class="studio_div"><i>Studio</i></span></h2>
+            </div>
+            <div class="tab">
+                <button class="tab_link" id="link-dashboard" onclick="showSection('dashboard')">
+                    <img class="small_image home_img" src="vidmeo_images/home.png" alt="vidmeo_image">
+                    <span class="tab_name">Dashboard</span>
+                </button>
+                <button class="tab_link" id="link-upload" onclick="showSection('upload_video')">
+                    <img class="small_image" src="vidmeo_images/play-add.png" alt="play-add_image">
+                    <span class="tab_name">Upload Videos</span>
+                </button>
+                <button class="tab_link" id="link-libary" onclick="showSection('video_libary')">
+                    <img class="small_image" src="vidmeo_images/video.png" alt="video_image">
+                    <span class="tab_name">Video Libary</span>
+                </button>
+                <button class="tab_link" id="link-boom" onclick="showSection('create_boomerang')">
+                    <img class="small_image" src="vidmeo_images/bommerang.png" alt="bommerang_image">
+                    <span class="tab_name">Create boomerang</span>
+                </button>
+                <button class="tab_link" id="link-campaign" style="margin-bottom: 0rem;" onclick="showSection('video_campaign')">
+                    <img class="small_image" src="vidmeo_images/video-tick.png" alt="video_tick">
+                    <span class="tab_name">Video Campaign</span>
+                </button>
+                <div class="profile_details">
+                    <hr>
+                    <button class="tab_link">
+                        <img src="vidmeo_images/create_video.png" alt="create_video_image">
+                        <span class="tab_name">Create Video</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main_section">
+        <div class="header">
+            <div class="head1">
+                <div class="search_div">
+                    <input type="text" placeholder="search">
+                    <img src="vidmeo_images/search.png" alt="search_image">
+                </div>
+                <div class="create_div">
+                    <a href="#" class="create">
+                        <img class="small_image" src="vidmeo_images/send.png" alt="send-image">
+                        <p>Create Campaign</p>
+                    </a>
+                </div>
+            </div>
+            <div class="head2">
+                <div>
+                    <a href="#">
+                        <img src="vidmeo_images/setting.png" alt="setting_image">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="vidmeo_images/Notification.png" alt="notification button">
+                    </a>
+                </div>
+                <div class="image_div">
+                    <img src="vidmeo_images/profile.png" alt="profile_picture">
+                </div>
+                <div class="sel">
+                    <select>
+                        <option>Rita</option>
+                        <option>Profile</option>
+                        <option>Settings</option>
+                        <option>Blog</option>
+                        <option>Log out</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================Dashboard_div============================ -->
+        <div class="dashboard_div tabContent open" id="dashboard">
+            <div class="main_content">
+                <div class="content1">
+                    <div class="box1">
+                        <div class="column">
+                            <div class="skyblue_circle">
+                                <p>
+                                    20
+                                </p>
+                            </div>
+                            <div class="text_div">
+                                Videos
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="yellow_circle">
+                                <p>
+                                    15
+                                </p>
+                            </div>
+                            <div class="text_div">
+                                Campaigns
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="column">
+                            <div class="darkbrown_circle">
+                                <p>
+                                    20
+                                </p>
+                            </div>
+                            <div class="text_div">
+                                Clients
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="blue_circle">
+                                <p>
+                                    50
+                                </p>
+                            </div>
+                            <div class="text_div">
+                                Projects
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content2">
+                    <div class="con">
+                        <h1>
+                            Deign it your way
+                        </h1>
+                        <p>
+                            Create Unique <br> Video Templates.
+                        </p>
+                    </div>
+                    <div class="vid">
+                        <div class="crete">
+                            Create Video
+                        </div>
+                        <div class="crete_img">
+                            <img src="vidmeo_images/gallery-edit.png" alt="gallery-edit-picture">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="two_heading">
+                <div class="one_head">
+                    Video Library
+                </div>
+                <div class="two_head">
+                    My Clients
+                </div>
+            </div>
+        <section class="section_4">
+            <div class="library_div">
+                <div class="library">
+                    <div class="img1">
+                        <video poster="/vidmeo_images/urban.png" src="short_video.mp4" controls></video>
+                        <!-- <img src="/vidmeo_images/urban.png" alt="urban_picture"> -->
+                        <span class="lib_text">Urban Planner Guide</span>
+                    </div>
+                    <div class="img2">
+                        <video poster="/vidmeo_images/cyber.png" src="short_video.mp4" controls></video>
+                        <!-- <img src="/vidmeo_images/cyber.png" alt="cyber_security_image"> -->
+                        <span class="lib_text">Cyber Security</span>
+                    </div>
+                </div>
+                <div class="library2">
+                    <div class="img1">
+                        <video poster="/vidmeo_images/sales.png" src="short_video.mp4" controls></video>
+                        <!-- <img src="/vidmeo_images/sales.png" alt="sales_picture"> -->
+                        <span class="lib_text">Sales</span>
+                    </div>
+                    <div class="img2">
+                        <video poster="/vidmeo_images/income_image.png" src="short_video.mp4" controls></video>
+                        <!-- <img src="/vidmeo_images/income_image.png" alt="income_image"> -->
+                        <span class="lib_text">Income</span>
+                    </div>
+                </div>
+            </div>
+            <div class="client">
+                <div class="profile_info">
+                    <div class="profile_email">
+                        <div class="email_time">
+                            <div class="profile_img">
+                                <img src="vidmeo_images/joe.png" alt="joe-picture">
+                            </div>
+                            <div>
+                                <P>Joe Yates <br> <span class="email">joe@mailme.com</span></P>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <small>Today, 10:00am</small>
+                        </div>
+                    </div>
+                    <div class="profile_email">
+                        <div class="email_time">
+                            <div class="profile_img">
+                                <img src="vidmeo_images/perry.png" alt="perry-picture">
+                            </div>
+                            <div>
+                                <p>Adelaide Perry <br> <span class="email">Perry@perrylin.io</span></p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <small>Yesterday, 10:00pm</small>
+                        </div>
+                    </div>
+                    <div class="profile_email">
+                        <div class="email_time">
+                            <div class="profile_img">
+                                <img src="vidmeo_images/butler.png" alt="butler-picture">
+                            </div>
+                            <div>
+                                <p>Emilie Butler <br> <span class="email">Butler@indio.io</span></p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <small>Yesterday, 10:00pm</small>
+                        </div>
+                    </div>
+                    <div class="profile_email">
+                        <div class="email_time">
+                            <div class="profile_img">
+                                <img src="vidmeo_images/chris.png" alt="christ-picture">
+                            </div>
+                            <div>
+                                <p>Chris Yang <br> <span class="email">Yang@youremail.com</span></p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <small>1 Day, 4:25pm</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ====================Upload options ============================ -->
+    <div class="tabContent" id="upload_video">
+        <div class="upload_option">
+            <div id="library_section" class="same_section">Library</div>
+            <div id="pixabay_section" class="same_section">Pixabay</div>
+            <div id="pexel_section" class="same_section">Pexels</div>
+            <!-- <div id="youtube_section" class="same_section">Youtube</div> -->
+        </div>
+
+        <!-- ====================Upload Video (Pixabay_div)=========================== -->
+        <div class="upload_div">
+            <div class="upload_drop">
+                <div class="upload_one">
+                    <div class="pexel_search">
+                        <div class="pexel_div">
+                            <img src="/upload_image/pixel.png" alt="pixel_image">
+                        </div>
+                        <div class="search_section">
+                            <input type="text" placeholder="Search any video here">
+                            <img src="vidmeo_images/search.png" alt="search_icon">
+                        </div>
+                    </div>
+                    <div class="video_section">
+                        <div class="video_div">
+                            <div class="image">
+                                <img src="upload_image/video1.png" alt="video1">
+                            </div>
+                            <div class="image">
+                                <img src="upload_image/video2.png" alt="video2">
+                            </div>
+                        </div>
+                        <div class="video_div video_div2">
+                            <div class="image">
+                                <img src="upload_image/video4.png" alt="video1">
+                            </div>
+                            <div class="image">
+                                <img src="upload_image/video3.png" alt="video2">
+                            </div>
+                        </div>
+                        <div class="video_div video_div2">
+                            <div class="image">
+                                <img src="upload_image/video3.png" alt="video1">
+                            </div>
+                            <div class="image">
+                                <img src="upload_image/video4.png" alt="video2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll_image">
+                        <img src="upload_image/rectangle.png" alt="scroll_image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================Upload (Library)===================== -->
+    <div class="upload_library">
+        <div class="dashed_border">
+            <div class="upload_image">
+                <img src="upload_image/gallery-add.png" alt="gallery_add_image">
+                <p class="drop">
+                    Drop files here!
+                </p>
+                <p class="choose">
+                    Or choose file
+                </p>
+                <p class="max">
+                    <i>Maximum size: <br> 1152 x 720px, png or jpeg</i>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===========================Video Libary========================== -->
+    <div class="video_libary tabContent" id="video_libary">
+        <div class="template_search">
+            <div class="template">
+                <h2>Templates</h2>
+                <p>Use one of our professionally designed video tempates as a starting point</p>
+            </div>
+            <div class="search_template">
+                <input type="text" placeholder="Search any video here">
+                <img src="vidmeo_images/search.png" alt="search_image">
+            </div>
+        </div>
+        <div class="video_templates">
+            <div class="news">
+                <img src="news_image/Rectangle 751.png" alt="scroll_image" class="scroll_image">
+                <div class="news_template">
+                    <p>New: 2021 Templates</p>
+                    <div class="arrow_div">
+                        <img src="news_image/arrow_right.png" alt="right_arrow_image" class="right_image">
+                        <img src="news_image/arrow_left.png" alt="left_arrow_image" class="left_image">
+                    </div>
+                    <div class="row_templates">
+                        <div class="news_img">
+                            <img src="news_image/employee.png" alt="employee_image">
+                        </div>
+                        <div class="news_img">
+                            <img src="news_image/healthcare.png" alt="healthcare_image">
+                        </div>
+                        <div class="news_img">
+                            <img src="news_image/development.png" alt="development_image">
+                        </div>
+                    </div>
+                </div>
+                <div class="news_template">
+                    <p>News</p>
+                    <div class="arrow_div">
+                        <img src="news_image/arrow_right.png" alt="right_arrow_image" class="right_image">
+                        <img src="news_image/arrow_left.png" alt="left_arrow_image" class="left_image">
+                    </div>
+                    <div class="row_templates">
+                        <div class="news_img">
+                            <img src="news_image/promo.png" alt="promo_image">
+                        </div>
+                        <div class="news_img">
+                            <img src="news_image/apple.png" alt="apple_image">
+                        </div>
+                        <div class="news_img">
+                            <img src="news_image/invest.png" alt="invest_image">
+                        </div>
+                    </div>
+                </div>
+                <div class="news_template">
+                    <p>New: 2021 Templates</p>
+                    <div class="arrow_div">
+                        <img src="news_image/arrow_right.png" alt="right_arrow_image" class="right_image">
+                        <img src="news_image/arrow_left.png" alt="left_arrow_image" class="left_image">
+                    </div>
+                    <div class="row_templates">
+                        <div class="news_img">
+                            <img src="news_image/half_empl.png" alt="employee_image">
+                        </div>
+                        <div class="news_img">
+                            <img src="news_image/half_health.png" alt="healthcare_image">
+                        </div>
+                        <div class="news_img">
+                            <img src="news_image/half_deve.png" alt="development_image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =============================Boomerang Section ========================== -->
+    <div class="booom_div tabContent" id="create_boomerang">
+        <div class="boom_header">
+            <div class="boom_save">
+                <i class='bx bx-check'></i>
+                <small class="boom_small">Saved</small>
+            </div>
+            <div class="trash_div">
+                <i class='bx bxs-trash lit'></i>
+            </div>
+            <div class="download_div">
+                <i class='bx bxs-download lit'></i>
+            </div>
+            <div class="embed_div">
+                <img src="boomerange_image/embed.png" alt="embed_image" class="boom_images">
+                <small>Embed</small>
+            </div>
+            <div class="preview_div">
+                <small>Preview</small>
+            </div>
+        </div>
+        <div class="logo_addVideos">
+            <div class="subTopic">
+                <div class="logo">
+                    <p>Minimailistic Logo intro design</p>
+                </div>
+                <div class="addVideos">
+                    <p>Add Videos</p>
+                </div>
+            </div>
+            <div class="boom_vid">
+                <div class="guy_image">
+                    <video poster="boomerange_image/YouTube Player - Playing.png" src="short_video.mp4" controls></video>
+                    <!-- <img src="boomerange_image/YouTube Player - Playing.png" alt="youtube_player" class="you"> -->
+                    <img src="boomerange_image/tools 2.png" alt="tool_image" class="tool">
+                    <button class="create_boom">
+                        Create Bommerang
+                    </button>
+                </div>
+                <div class="addVid">
+                    <div class="rec_image">
+                        <div class="triple_div">
+                            <img src="boomerange_image/Rectangle1.png" alt="rect_image">
+                        </div>
+                        <div class="triple_div">
+                            <img src="boomerange_image/Rectangle2.png" alt="rec_image2">
+                        </div>
+                    </div>
+                    <div class="rec_image recs">
+                        <div class="triple_div">
+                            <img src="boomerange_image/Rectangle3.png" alt="rect_image">
+                        </div>
+                        <div class="triple_div">
+                            <img src="boomerange_image/Rectangle4.png" alt="rec_image2">
+                        </div>
+                    </div>
+                    <div class="rec_image recs">
+                        <div class="triple_div">
+                            <img src="boomerange_image/Rectangle5.png" alt="rect_image">
+                        </div>
+                        <div class="triple_div">
+                            <img src="boomerange_image/Rectangle6.png" alt="rec_image2">
+                        </div>
+                    </div>
+                    <div class="rec_image recs">
+                        <div class="triple_div">
+                            <img src="boomerange_image/Rectangle7.png" alt="rect_image">
+                        </div>
+                        <div class="triple_div">
+                            <img src="boomerange_image/Rectangle8.png" alt="rec_image2">
+                        </div>
+                    </div>
+                    <div class="scroll_div">
+                        <img src="boomerange_image/scroll.png" alt="scroll_image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- ============================Video Campaign========================== -->
+    <div class="campaign_section tabContent" id="video_campaign">
+        <div class="campaign_div">
+            <div class="best">
+                <div class="dfy_div">
+                    <p>
+                        Use The Best Of Our Premium <br> DFY Design Assets For Your Business.
+                    </p>
+                </div>
+                <div class="createCampaign">
+                    <img src="campign_image/cre.png" alt="campaign_plane_image">
+                    <p>
+                        Create Campaign
+                    </p>
+                </div>
+            </div>
+            <div class="input_only">
+                <input type="text" name="search" placeholder="Search">
+                <i class='bx bx-search'></i>
+            </div>
+        </div>
+        <div class="boxes">
+            <div class="box">
+                <div class="inner_box">
+                    <div class="box_image">
+                        <video poster="campign_image/Rectangle1.png" src="short_video.mp4" controls></video>
+                        <!-- <img src="campign_image/Rectangle1.png" alt="rec_1"> -->
+                    </div>
+                    <div class="flyer_div">
+                        <div class="design_div">
+                            Flyer Design
+                        </div>
+                        <div class="time_div">
+                            00:30
+                        </div>
+                    </div>
+                    <div class="created_date">
+                        <p>
+                            Created: 11.27.2021
+                        </p>
+                    </div>
+                    <div class="lil_image">
+                        <div class="mb_div">
+                            0.33 mb
+                        </div>
+                        <div class="del_images">
+                            <img src="campign_image/image1.png" alt="img_1">
+                            <img src="campign_image/image2.png" alt="img_2">
+                            <img src="campign_image/image3.png" alt="img_3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="inner_box">
+                    <div class="box_image">
+                        <video poster="campign_image/Rectangle2.png" src="short_video.mp4" controls></video>
+                        <!-- <img src="campign_image/Rectangle2.png" alt="img_2"> -->
+                    </div>
+                    <div class="flyer_div">
+                        <div class="design_div">
+                            Flyer Design
+                        </div>
+                        <div class="time_div">
+                            00:30
+                        </div>
+                    </div>
+                    <div class="created_date">
+                        <p>
+                            Created: 11.27.2021
+                        </p>
+                    </div>
+                    <div class="lil_image">
+                        <div class="mb_div">
+                            0.33 mb
+                        </div>
+                        <div class="del_images">
+                            <img src="campign_image/image1.png" alt="img_1">
+                            <img src="campign_image/image2.png" alt="img_2">
+                            <img src="campign_image/image3.png" alt="img_3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="inner_box">
+                    <div class="box_image">
+                        <video poster="campign_image/Rectangle3.png" src="short_video.mp4" controls></video>
+                        <!-- <img src="campign_image/Rectangle3.png" alt="rec_3"> -->
+                    </div>
+                    <div class="flyer_div">
+                        <div class="design_div">
+                            Flyer Design
+                        </div>
+                        <div class="time_div">
+                            00:30
+                        </div>
+                    </div>
+                    <div class="created_date">
+                        <p>
+                            Created: 11.27.2021
+                        </p>
+                    </div>
+                    <div class="lil_image">
+                        <div class="mb_div">
+                            0.33 mb
+                        </div>
+                        <div class="del_images">
+                            <img src="campign_image/image1.png" alt="img_1">
+                            <img src="campign_image/image2.png" alt="img_2">
+                            <img src="campign_image/image3.png" alt="img_3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="inner_box">
+                    <div class="box_image">
+                        <video poster="campign_image/Rectangle4.png" src="short_video.mp4" controls></video>
+                        <!-- <img src="campign_image/Rectangle4.png" alt="rec_4"> -->
+                    </div>
+                    <div class="flyer_div">
+                        <div class="design_div">
+                            Flyer Design
+                        </div>
+                        <div class="time_div">
+                            00:30
+                        </div>
+                    </div>
+                    <div class="created_date">
+                        <p>
+                            Created: 11.27.2021
+                        </p>
+                    </div>
+                    <div class="lil_image">
+                        <div class="mb_div">
+                            0.33 mb
+                        </div>
+                        <div class="del_images">
+                            <img src="campign_image/image1.png" alt="img_1">
+                            <img src="campign_image/image2.png" alt="img_2">
+                            <img src="campign_image/image3.png" alt="img_3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script lang="javascript" text="text/javascript" src="/signUp.js"></script>
+</body>
+</html>

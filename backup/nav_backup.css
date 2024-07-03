@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f3f3f3;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    display: none;
+}
+
+.sideBar{
+    position: fixed;
+    background-color: #fff;
+    min-height: 100vh;
+    width: 16%;
+    padding: .4rem .8rem;
+}
+
+.sideBar .vidmeo_div {
+    font-size: 1rem;
+    margin-left: 1.5rem;
+}
+
+.sideBar .vidmeo_div h2 .studio_div {
+    color: #5846f5;
+}
+
+.nav_list {
+    height: 100%;
+}
+
+.sideBar ul {
+    margin-left: 1.5rem;
+}
+
+.sideBar ul li {
+    margin: 2rem 0;
+    list-style: none;
+    padding: 0.5rem 1rem;
+}
+
+.sideBar ul li:hover {
+    width: 106%;
+    color: #5846f5;
+    background-color: #f4e8fe;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border-bottom-right-radius: 0rem;
+    border-top-right-radius: 0rem;
+}
+
+/* .sideBar ul li a .link_name:hover{
+    color: #5846f5;
+} */
+
+.sideBar ul li a {
+    display: flex;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+.sideBar .nav_list li a i {
+    font-size: 25px;
+    color: #949494;
+}
+
+.sideBar .profile_details {
+    margin-top: 27rem;
+}
+
+.sideBar .profile_details ul li a i {
+    font-size: 25px;
+    color: #949494;
+}
+
+.link_name {
+    color: #949494;
+}
+
+hr {
+    margin-left: 2rem;
+    margin-bottom: -1rem;
+    width: 70%;
+}
+
+.link_name:hover {
+    color: #5846f5;
+}
+
+
+
+
+
+
+
+
+.header {
+    border: solid red;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 84%;
+    height: 7vh;
+    left: 16%;
+    gap: 20rem;
+}
+
+.header ul {
+    display: flex;
+    gap: 10rem;
+    list-style: none;
+}
+
+.header ul li .search {
+    display: flex;
+    width: 200%;
+    border: solid red;
+}
+
+.create_div{
+    border: solid red;
+}
+
+.create {
+    display: flex;
+    width: 100%;
+    color: #fff;
+    gap: 1rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #000;
+}
+
+.header .unorder_list2 {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+    margin-left: 20rem;
+}
+
+.header ul li img {
+    border-radius: 0.5rem;
+    width: 70%;
+    background-size: cover;
+    height: 3rem;
+}
+
+.header ul li a i{
+    font-size: 1.5rem;
+}

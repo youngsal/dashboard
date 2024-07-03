@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/signUp.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form_section">
+            <div class="vidmeo">
+                <h3>Vidmeo<i><span>Studio</span></i></h3>
+            </div>
+
+            <div class="create">
+                <h2>Create your Account</h2>
+                <p>Created for designers by designers</p>
+            </div>
+            <div class="form_main">
+                <form name="form" id="form">
+                    <div class="form-control">
+                        <label>Username</label>
+                        <div class="input_div">
+                            <input type="text" name="username" id="username" placeholder="Robert green">
+                            <i class='bx bxs-user-pin main_icon main_icon'></i>
+                            <i class='bx bx-error-circle error_circle'></i>
+                            <i class='bx bxs-check-circle success_circle'></i>
+                            <small>Error message</small>
+                        </div>
+                    </div>
+
+                    <div class="form-control">
+                        <label>Email</label>
+                        <div class="input_div">
+                            <input type="email" name="email" id="email" placeholder="user@gmail.com">
+                            <i class='bx bxs-envelope main_icon main_icon'></i>
+                            <i class='bx bx-error-circle error_circle'></i>
+                            <i class='bx bxs-check-circle success_circle'></i>
+                            <small>Error message</small>
+                        </div>
+                    </div>
+
+                    <div class="form-control">
+                        <label>Create Password</label>
+                        <div class="input_div">
+                            <input type="password" name="password" id="password" placeholder="6+ stronger character">
+                            <i class='bx bxs-lock-open main_icon main_icon'></i>
+                            <i class='bx bx-error-circle error_circle'></i>
+                            <i class='bx bxs-check-circle success_circle'></i>
+                            <small>Error message</small>
+                        </div>
+                    </div>
+                    <div class="btn_section">
+                        <button type="submit">
+                            Finish!
+                        </button>
+                        <div class="acc">
+                            <p>Have an account? <a href="#">Click here!</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="video_section">
+            <video src="/motion_video/vidd.mp4" class="vid"  autoplay></video> 
+        </div>
+    </div>
+
+    <script lang="javascript" type="text/javascript" src="/signUp.js"></script>
+</body>
+</html>
