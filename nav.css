@@ -115,10 +115,15 @@ body {
     cursor: pointer;
 }
 
-.sideBar .tab .tab_link.active {
+/* .sideBar .tab .tab_link.active {
     color: #5846f5;
-    /* background-color: #f4e8fe; */
-    background-color: #000 !important;
+    background-color: #f4e8fe !important;
+} */
+
+.sideBar .tab .tab_link.active {
+    color: #5846f5 ;
+    background-color: #f4e8fe;
+
 }
 
 .sideBar .tab .tab_link:hover {

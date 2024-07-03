@@ -61,29 +61,86 @@ buttons.forEach(l => {
 });
 
 
-// ====================For sidebar and content
+// // ====================For sidebar and content
+// function showSection(sectionId) {
+//     // getting all element with class="tabContent" and hide them
+//     var sections = document.querySelectorAll(".tabContent");
+//     sections.forEach(function(tabContent) {
+//         tabContent.classList.remove('open');
+//     });
+
+//     // // removing active
+//     // var buttons = querySelector('.tab_link').classList.remove('active');
+//     // buttons.addEventListener('click', () => {
+//     //     buttons.classList.add('active');
+//     // });
+
+//     //  // Add active class to the selected link
+//     //  var activeLink = document.getElementById('link-' + sectionId);
+//     //  activeLink.classList.add('active');
+
+//     // Show the selected section
+//     var activeSection = document.getElementById(sectionId);
+//         activeSection.classList.add('open');
+//     // Show the dashboard section as default
+//     document.addEventListener('DOMContentLoaded', function(){
+//         showSection('dashboard');
+//     });
+// }
+
+// function showSection(sectionId) {
+//     // Getting all elements with class="tabContent" and hide them
+//     var sections = document.querySelectorAll(".tabContent");
+//     sections.forEach(function(tabContent) {
+//         tabContent.classList.remove('open');
+//     });
+
+//     // Show the selected section
+//     var activeSection = document.getElementById(sectionId);
+//     activeSection.classList.add('open');
+
+//     // Make the corresponding button active
+//     var buttons = document.querySelectorAll('.tab_link');
+//     buttons.forEach(function(button) {
+//         button.classList.remove('active');
+//     });
+
+//     var activeButton = document.querySelector(⁠`[onclick="showSection('${sectionId}')"]` ⁠);
+//     activeButton.classList.add('active');
+// }
+
+// // Show the dashboard section as default
+// document.addEventListener('DOMContentLoaded', function(){
+//     showSection('dashboard');
+// });
+
+
+
+
+
+
 function showSection(sectionId) {
-    // getting all element with class="tabContent" and hide them
+    // Getting all elements with class="tabContent" and hide them
     var sections = document.querySelectorAll(".tabContent");
     sections.forEach(function(tabContent) {
         tabContent.classList.remove('open');
     });
 
-    // // removing active
-    // var buttons = querySelector('.tab_link').classList.remove('active');
-    // buttons.addEventListener('click', () => {
-    //     buttons.classList.add('active');
-    // });
-
-    //  // Add active class to the selected link
-    //  var activeLink = document.getElementById('link-' + sectionId);
-    //  activeLink.classList.add('active');
-
     // Show the selected section
     var activeSection = document.getElementById(sectionId);
-        activeSection.classList.add('open');
-    // Show the dashboard section as default
-    document.addEventListener('DOMContentLoaded', function(){
-        showSection('dashboard');
+    activeSection.classList.add('open');
+
+    // Make the corresponding button active
+    var buttons = document.querySelectorAll('.tab_link');
+buttons.forEach(function(button) {
+        button.classList.remove('active');
     });
+
+    var activeButton = document.querySelector(`[onclick="showSection('${sectionId}')"]`);
+    activeButton.classList.add('active');
 }
+
+// Show the dashboard section as default
+document.addEventListener('DOMContentLoaded', function(){
+    showSection('dashboard');
+});
